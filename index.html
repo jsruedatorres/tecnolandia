@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tecnolandia</title>
+  <style>
+    /* Estilos generales */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .productos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .producto {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin: 10px;
+      padding: 20px;
+      width: 200px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .producto img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    .producto h3 {
+      font-size: 1.2rem;
+      margin: 10px 0;
+    }
+
+    .producto button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .producto button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tecnolandia</h1>
+  </header>
+
+  <section class="productos">
+    <!-- Producto 1 -->
+    <div class="producto">
+      <img src="https://i.imgur.com/kqYkuN6.png" alt="Producto 1">
+      <h3>Laptop Gamer</h3>
+      <button onclick="comprarProducto('Laptop Gamer')">Comprar</button>
+    </div>
+
+    <!-- Producto 2 -->
+    <div class="producto">
+      <img src="https://i.imgur.com/hnsZnbQ.png" alt="Producto 2">
+      <h3>Smartphone Pro</h3>
+      <button onclick="comprarProducto('Smartphone Pro')">Comprar</button>
+    </div>
+
+    <!-- Producto 3 -->
+    <div class="producto">
+      <img src="https://i.imgur.com/zOGAMS6.png" alt="Producto 3">
+      <h3>Tablet Elite</h3>
+      <button onclick="comprarProducto('Tablet Elite')">Comprar</button>
+    </div>
+
+    <!-- Producto 4 -->
+    <div class="producto">
+      <img src="https://i.imgur.com/hOAj0Ba.png" alt="Producto 4">
+      <h3>Monitor 4K</h3>
+      <button onclick="comprarProducto('Monitor 4K')">Comprar</button>
+    </div>
+
+    <!-- Producto 5 -->
+    <div class="producto">
+      <img src="https://i.imgur.com/Ij6jhaB.png" alt="Producto 5">
+      <h3>Teclado Mecánico</h3>
+      <button onclick="comprarProducto('Teclado Mecánico')">Comprar</button>
+    </div>
+  </section>
+
+  <script>
+    // Función para redirigir a WhatsApp
+    function comprarProducto(nombreProducto) {
+      const mensaje = encodeURIComponent(`¡Hola! 👋 Estoy interesado/a en comprar ${nombreProducto} en *Tecnolandia*. 🛒💻📱\n\n` +
+    `¿Podrías darme más información? 🧐\n` +
+    `¿Tienen stock disponible? 📦\n` +
+    `¡Gracias! 😊`);
+      const urlWhatsApp = `https://wa.me/+573013408019?text=${mensaje}`;
+      window.open(urlWhatsApp, '_blank');
+    }
+  </script>
+</body>
+</html>
