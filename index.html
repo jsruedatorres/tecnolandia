@@ -15,7 +15,7 @@
     }
 
     header {
-      background-color: #007bff;
+      background-color: #007BFF; /* Azul tecnológico */
       color: white;
       padding: 20px;
       text-align: center;
@@ -24,6 +24,19 @@
     h1 {
       margin: 0;
       font-size: 2.5rem;
+    }
+
+    .banner {
+      background-color: #ffcc00; /* Color amarillo para el banner */
+      color: #333; /* Color de texto oscuro */
+      padding: 10px;
+      margin: 10px auto; /* Centrar el banner */
+      border-radius: 5px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      width: 80%; /* Ancho del banner */
+      max-width: 400px; /* Ancho máximo */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
     }
 
     .productos {
@@ -55,7 +68,7 @@
     }
 
     .producto button {
-      background-color: #28a745;
+      background-color: #007BFF; /* Azul tecnológico */
       color: white;
       border: none;
       padding: 10px 20px;
@@ -65,48 +78,54 @@
     }
 
     .producto button:hover {
-      background-color: #218838;
+      background-color: #0056b3; /* Azul más oscuro al hacer hover */
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Tecnolandia</h1>
+    <div class="banner">¡30% de descuento por Cyber Monday! 🎉</div>
   </header>
 
   <section class="productos">
     <!-- Producto 1 -->
     <div class="producto">
-      <img src="https://i.imgur.com/kqYkuN6.png" alt="Producto 1">
+      <img src="https://i.imgur.com/kqYkuN6.png" alt="Laptop Gamer">
       <h3>Laptop Gamer</h3>
+      <p>Potencia y estilo se unen en esta Laptop Gamer, diseñada para ofrecer el máximo rendimiento en tus sesiones de juego. Equipada con un procesador de última generación, tarjeta gráfica dedicada y pantalla de alta frecuencia de actualización, disfrutarás de gráficos fluidos y una experiencia inmersiva. Perfecta para gamers exigentes y profesionales creativos.</p>
       <button onclick="comprarProducto('Laptop Gamer')">Comprar</button>
     </div>
 
     <!-- Producto 2 -->
     <div class="producto">
-      <img src="https://i.imgur.com/hnsZnbQ.png" alt="Producto 2">
+      <img src="https://i.imgur.com/hnsZnbQ.png" alt="Smartphone Pro">
       <h3>Smartphone Pro</h3>
+      <p>El Smartphone Pro combina innovación y elegancia en un dispositivo compacto. Con una cámara de alta resolución, pantalla AMOLED y batería de larga duración, este smartphone es ideal para capturar momentos especiales, mantenerse conectado y disfrutar de entretenimiento en cualquier lugar. ¡Tecnología avanzada en la palma de tu mano!</p>
       <button onclick="comprarProducto('Smartphone Pro')">Comprar</button>
     </div>
 
     <!-- Producto 3 -->
     <div class="producto">
-      <img src="https://i.imgur.com/zOGAMS6.png" alt="Producto 3">
+      <img src="https://i.imgur.com/zOGAMS6.png" alt="Tablet Elite">
       <h3>Tablet Elite</h3>
+      <p>La Tablet Elite es tu compañera perfecta para el trabajo y el entretenimiento. Con una pantalla táctil nítida, potente procesador y diseño ultradelgado, esta tablet es ideal para navegar, ver películas, leer libros electrónicos o trabajar en movimiento. Ligera, versátil y lista para cualquier desafío.</p>
       <button onclick="comprarProducto('Tablet Elite')">Comprar</button>
     </div>
 
     <!-- Producto 4 -->
     <div class="producto">
-      <img src="https://i.imgur.com/hOAj0Ba.png" alt="Producto 4">
+      <img src="https://i.imgur.com/hOAj0Ba.png" alt="Monitor 4K">
       <h3>Monitor 4K</h3>
+      <p>Experimenta la claridad y el detalle con este Monitor 4K. Con una resolución ultra alta, colores vibrantes y tiempo de respuesta rápido, es perfecto para diseñadores, editores de video y gamers que buscan la mejor calidad visual. Transforma tu espacio de trabajo o juego con una experiencia visual impresionante.</p>
       <button onclick="comprarProducto('Monitor 4K')">Comprar</button>
     </div>
 
     <!-- Producto 5 -->
     <div class="producto">
-      <img src="https://i.imgur.com/Ij6jhaB.png" alt="Producto 5">
+      <img src="https://i.imgur.com/Ij6jhaB.png" alt="Teclado Mecánico">
       <h3>Teclado Mecánico</h3>
+      <p>El Teclado Mecánico ofrece una experiencia de escritura y juego incomparable. Con switches duraderos, retroiluminación RGB personalizable y diseño ergonómico, este teclado es ideal para gamers y profesionales que buscan precisión y comodidad. ¡Escribe y juega como nunca antes!</p>
       <button onclick="comprarProducto('Teclado Mecánico')">Comprar</button>
     </div>
   </section>
